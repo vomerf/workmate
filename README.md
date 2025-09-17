@@ -5,7 +5,7 @@
 Далее переходим в директорию workmate
 c помощью команды ```cd workmate```
 Устанавливаем зависимости с помощью команды ```poetry install```
-Если poetry нету нужно установить.
+Если poetry нету нужно установить. https://python-poetry.org/docs/#installing-with-pipx
 
 После установки выполнить команду
 ```poetry run python main.py --files students1.csv students2.csv --report students-performance```
