@@ -16,7 +16,7 @@ def parse_args():
 
 def get_report(report_name: str) -> StudentPerformanceReport:
     if report_name not in REPORTS:
-        raise ValueError(f"Unknown report: {report_name}")
+        raise ValueError(f"Такого отчета не существует: {report_name}")
     return REPORTS[report_name]()
 
 
