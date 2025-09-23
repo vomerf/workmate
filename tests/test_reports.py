@@ -1,7 +1,9 @@
-import pytest
 import csv
-from reports.student_report import StudentPerformanceReport
+
+import pytest
+
 from main import get_report
+from reports.student_report import StudentPerformanceReport
 
 
 def make_csv(tmp_path, name, rows):
