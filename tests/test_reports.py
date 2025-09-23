@@ -3,6 +3,7 @@ import csv
 from reports.student_report import StudentPerformanceReport
 from main import get_report
 
+
 def make_csv(tmp_path, name, rows):
     """Утилита для создания временного CSV"""
     file_path = tmp_path / name
@@ -70,10 +71,10 @@ def test_student_performance_two_files(two_csvs):
 
 def test_get_report_valid():
     report = get_report("students-performance")
-    from reports import StudentPerformanceReport  # если он у тебя лежит в reports
+    from reports import StudentPerformanceReport
     assert isinstance(report, StudentPerformanceReport)
 
 
 def test_get_report_invalid():
-    with pytest.raises(ValueError, match="Unknown report:"):
+    with pytest.raises(ValueError, match="Отчета с таким названием не существует:"):
         get_report("unknown_report")
