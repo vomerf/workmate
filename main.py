@@ -5,7 +5,7 @@ from reports import REPORTS, StudentPerformanceReport
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Генерация отчета")
+    parser = argparse.ArgumentParser(description="Student performance report generator")
     parser.add_argument(
         "--files", nargs="+", required=True, help="Файлы для отчетов"
     )
